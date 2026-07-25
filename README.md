@@ -77,7 +77,7 @@ cpp/
 
 ## 3. NPC Processing
 
-### 6. `impact of cell/cpp/get_cell_vth_nnew_combined_read_retry_below.cpp`
+### 6. `get_cell_vth_nnew_combined_read_retry_below.cpp`
 
 > ⭐ **Core file** – The most critical program in the entire NPC processing flow.
 
@@ -91,7 +91,7 @@ cpp/
 
 ---
 
-### 7. `impact of cell/get_all_info.py`
+### 7. `get_all_info.py`
 
 - **Purpose**: Processes the output data from the NPC model. It contains multiple data processing schemes (e.g., statistics at different granularities, visualization, filtering conditions, etc.).
 - **Input**: Error and read Vth data after NPC processing.
