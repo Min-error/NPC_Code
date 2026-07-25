@@ -47,7 +47,7 @@ cpp/
 
 ---
 
-## 2. SSD Runtime Data Extraction & Simulation
+## 2. SimpleSSD Runtime Data Extraction & Simulation
 
 ### 3. `block_retrntiontime_get.py`
 
