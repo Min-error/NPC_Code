@@ -62,7 +62,7 @@ cpp/
 ### 4. `get_readretry_num.py`
 
 - **Purpose**: Extracts read retry related data from simulation outputs, counting how many times each read operation triggers a retry.
-- **Input**: SimpleSSD simulation logs or output files.
+- **Input**: NPC simulation output files.
 - **Output**: Statistics of read retry counts.
 
 ---
