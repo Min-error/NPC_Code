@@ -72,6 +72,8 @@ primary source directly includes the three helper `.cpp` files. Compile only
 the primary source; compiling every `.cpp` file together would create
 duplicate definitions.
 
+---
+
 ## Trace Analysis & Preprocessing
 
 ### `msr_workload2trace.cpp`
@@ -80,16 +82,12 @@ duplicate definitions.
 - **Input**: Raw MSR workload files.
 - **Output**: Trace files in `.revised` format compliant with SimpleSSD input specifications.
 
----
-
 ### `analysis_trace_info.py` / `analysis_trace_info1.py`
 
 - **Purpose**: Reads the most basic information from trace files (e.g., number of requests, read/write ratio, LBA distribution, request size distribution, etc.).
 - **Input**: Original trace files (e.g., `test1.revised`).
 - **Output**: Basic statistics printed to the terminal.
 - **Use case**: Quickly understand the overall characteristics of a trace.
-
----
 
 ## SimpleSSD Runtime Data Extraction & Simulation
 
@@ -101,23 +99,17 @@ duplicate definitions.
 
 > Output file: `block_rt_assignment.csv`
 
----
-
 ### `get_readretry_num.py`
 
 - **Purpose**: Extracts read retry related data from simulation outputs, counting how many times each read operation triggers a retry.
 - **Input**: NPC simulation output files.
 - **Output**: Statistics of read retry counts.
 
----
-
 ### `compare_retrytime.py`
 
 - **Purpose**: Performs comparative analysis on read retry time data under different conditions (e.g., varying wear levels, temperatures, retention times).
 - **Input**: Multiple sets of read retry data files.
 - **Output**: Comparative analysis results.
-
----
 
 ## NPC Processing
 
@@ -147,7 +139,6 @@ duplicate definitions.
     `out_all_data()` writes voltage, error, and retry CSV files.
 
 - **Note**: Different outputs can be obtained by modifying certain parameters in this file.
----
 
 ### `get_all_info.py`
 
